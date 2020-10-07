@@ -153,6 +153,7 @@ console.log(alpha);
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
+
 const data = [
   'car',
   'car',
