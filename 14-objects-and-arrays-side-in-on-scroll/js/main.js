@@ -4,9 +4,12 @@
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
-
+    console.log(players);
+    
     // and we want to make a copy of it.
-
+    const playersClone = [...players];
+    console.log(playersClone);
+    
     // You might think we can just do something like this:
 
     // however what happens when we update that array?
@@ -35,8 +38,14 @@
       age: 80
     };
 
+    console.log(person);
     // and think we make a copy:
 
+    const personClone = {
+  ...person
+  };
+
+  console.log(personClone);
     // how do we take a copy instead?
 
     // We will hopefully soon see the object ...spread
