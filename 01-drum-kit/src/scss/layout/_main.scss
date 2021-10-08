@@ -1,0 +1,42 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .keys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .key {
+    height: 105px;
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffeb24;
+    border-radius: 6px;
+    margin: 1.75rem;
+    padding: 15px;
+    font-size: 2.75rem;
+    transition: all 0.07s ease;
+    text-align: center;
+    color: #5ba2b5;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .sound {
+    font-family: lobster;
+    font-size: 34px;
+    text-transform: capitalize;
+  }
+
+  .playing {
+    transform: scale(1.1);
+    border-color: #ffeb24;
+    box-shadow: 0 6px 5px #f1ecaa;
+  }
+}
